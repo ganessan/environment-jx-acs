@@ -29,8 +29,9 @@ acs:
     
   apiexplorer:
     ingress:
-      path: /api-explorer    
-   share:
+      path: /api-explorer
+      
+  share:
     ingress:
       path: /share
       
