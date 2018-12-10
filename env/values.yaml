@@ -20,3 +20,21 @@ expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
+
+acs:
+  repository:
+    replicaCount: 1
+    ingress:
+      path: /alfresco
+    
+  apiexplorer:
+    ingress:
+      path: /api-explorer
+      
+  share:
+    ingress:
+      path: /share
+      
+  alfresco-digital-workspace:
+    ingress:
+      path: /digital-workspace  
