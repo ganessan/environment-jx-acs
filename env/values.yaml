@@ -25,10 +25,16 @@ acs:
   # https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
   registryPullSecrets: quay-io-private-registry-secret
   
-#  externalHost: jx-acs.54.159.228.81.nip.io
-#  externalProtocol: http
-#  externalPort: 80
+  externalHost: jx-acs.54.159.228.81.nip.io
+  externalProtocol: http
+  externalPort: 80
   
+  postgresql:
+    enabled: true
+    # Default to Postgresql PVC to avoid same volume mount conflict between ActiveMQ and Postresql
+    persistence:
+      existingClaim: null
+    
   repository:
     replicaCount: 1
     ingress:
