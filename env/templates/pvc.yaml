@@ -4,7 +4,7 @@ apiVersion: v1
 metadata:
   name: alfresco-volume-claim-override
   labels:
-    app:  {{ .Release.Name }}-{{ .Chart.Name }}
+    app:  "{{ .Release.Name }}-{{ .Chart.Name }}"
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
     release: "{{ .Release.Name }}"
     heritage: "{{ .Release.Service }}"
