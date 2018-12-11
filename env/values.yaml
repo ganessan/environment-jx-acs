@@ -31,6 +31,7 @@ acs:
   
   persistence:
     existingClaim: "alfresco-volume-claim-override"
+    baseSize: 20Gi
   
   postgresql:
     enabled: true
