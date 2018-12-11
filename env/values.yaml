@@ -29,6 +29,10 @@ acs:
   externalProtocol: http
   externalPort: 80
   
+  persistence:
+    existingClaim: "alfresco-volume-claim-override"
+    baseSize: 20Gi
+  
   postgresql:
     enabled: true
     # Default to Postgresql PVC to avoid same volume mount conflict between ActiveMQ and Postresql
