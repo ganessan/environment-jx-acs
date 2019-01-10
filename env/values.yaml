@@ -55,5 +55,6 @@ acs:
   alfresco-digital-workspace:
     registryPullSecrets: quay-io-private-registry-secret
     ingress:
-      path: /digital-workspace  
+      path: /digital-workspace
+      applicationBasePath: ./digital-workspace/
 
