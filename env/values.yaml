@@ -41,6 +41,9 @@ acs:
     
   repository:
     replicaCount: 1
+    image:
+      repository: quay.io/alfresco/alfresco-governance-repository-enterprise
+      tag: latest
     ingress:
       path: /alfresco
     
@@ -49,6 +52,9 @@ acs:
       path: /api-explorer
       
   share:
+    image:
+      repository: quay.io/alfresco/alfresco-governance-share-enterprise
+      tag: latest
     ingress:
       path: /share
       
