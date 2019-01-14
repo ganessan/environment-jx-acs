@@ -28,12 +28,13 @@ acs:
   externalHost: jx-acs.54.159.228.81.nip.io
   externalProtocol: http
   externalPort: 80
+
+  alfresco-insight-zeppelin:
+    enabled: true
   
   alfresco-search:
     type: "insight-engine"
     registryPullSecrets: "quay-io-private-registry-secret"
-    alfresco-insight-zeppelin:
-      enabled: true
     ingress:
       enabled: true
       basicAuth: YWRtaW46JGFwcjEkVVJqb29uS00kSEMuS1EwVkRScFpwSHB2a3JwTDd1Lg==
