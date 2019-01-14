@@ -29,8 +29,8 @@ acs:
   externalProtocol: http
   externalPort: 80
 
-  alfresco-insight-zeppelin:
-    enabled: true
+#   alfresco-insight-zeppelin:
+#     enabled: true
   
   alfresco-search:
     type: "insight-engine"
