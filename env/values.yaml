@@ -36,6 +36,7 @@ acs:
       enabled: true
     ingress:
       enabled: true
+      basicAuth: YWRtaW46JGFwcjEkVVJqb29uS00kSEMuS1EwVkRScFpwSHB2a3JwTDd1Lg==
     
   persistence:
     existingClaim: "alfresco-volume-claim-override"
