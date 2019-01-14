@@ -29,6 +29,12 @@ acs:
   externalProtocol: http
   externalPort: 80
   
+  alfresco-search:
+    type: "insight-engine"
+    registryPullSecrets: "quay-io-private-registry-secret"
+    alfresco-insight-zeppelin:
+      enabled: true
+    
   persistence:
     existingClaim: "alfresco-volume-claim-override"
     baseSize: 20Gi
