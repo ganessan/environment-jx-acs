@@ -34,6 +34,8 @@ acs:
     registryPullSecrets: "quay-io-private-registry-secret"
     alfresco-insight-zeppelin:
       enabled: true
+    ingress:
+      enabled: true
     
   persistence:
     existingClaim: "alfresco-volume-claim-override"
