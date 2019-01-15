@@ -7,7 +7,7 @@ dependencies:
   version: 2.3.82
   repository: http://chartmuseum.jenkins-x.io
   alias: cleanup
-# - name: alfresco-content-services
-#   alias: acs
-#   version: 1.1.8
-#   repository: http://kubernetes-charts.alfresco.com/stable
+- name: alfresco-content-services
+  alias: acs
+  version: 1.1.8
+  repository: http://kubernetes-charts.alfresco.com/stable
