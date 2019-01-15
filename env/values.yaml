@@ -21,6 +21,9 @@ expose:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
 
+alfresco-insight-zeppelin:
+  enabled: true
+
 acs:
   # https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
   registryPullSecrets: quay-io-private-registry-secret
@@ -33,7 +36,6 @@ acs:
     type: "insight-engine"
     registryPullSecrets: "quay-io-private-registry-secret"
     alfresco-insight-zeppelin:
-      enabled: true
       registryPullSecrets: quay-io-private-registry-secret
       image:
         repository: quay.io/alfresco/insight-zeppelin
